@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header>nav a:hover path {
+
+    fill: #fff;
+
+}
+
+article {
+    color: #c5c2c2;
+    background-color: #36353565;
+}
+
+.skils {
+    text-align: center;
+}
+
+.experence>div {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.experence>div p {
+
+    padding-top: 25%;
+}
+
+.experence>div {
+    width: 150px;
+    height: 150px;
+    background-color: #000000;
+    transition: transform 0.4s ease;
+}
+
+.translatable-div {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.3s ease;
+    /* Adding a transition for smooth movement */
+}
+
+.translatable-div:hover {
+    transform: translate(0, -20px);
+    /* Adjust the values for the desired translation */
+}
+
+article>.experence>div:hover {
+
+    transform: translate(20px, -20px);
+
+}
+
+article>.experence {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+
+header {
+    background: linear-gradient(-45deg, #000000, #000000, #777777, #020202);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.header_home {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+
+}
+
+header>main>.about-me {
+    color: #c5c2c2;
+}
+
+/* CSS */
+.personal-picture {
+    width: 400px;
+    height: 350px;
+    /* This maintains the aspect ratio while setting the width */
+}
+
+
+header>main>.personal-picture {
+
+    border-radius: 50%;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body {
+    background-color: rgb(0, 0, 0)
+}
+
+footer {
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+section {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contant-me {
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.contant:hover {
+    background-color: #999797;
+}
+
+.contant-me h3 {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.social a {
+    padding: 8px;
+}
+
+.contant {
+    width: 150px;
+    height: 50px;
+    background-color: #c5c2c2;
+    border-radius: 20px;
+}
+
+/*form */
+.contact-right {
+    padding: 5rem 4rem;
+}
+
+.contact-right form {
+    margin-top: 0;
+}
+
+.form-element .form-control {
+    width: 100%;
+    background-color: #c5c2c2;
+    border: none;
+    outline: 0;
+    padding: 1rem 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--light-color);
+}
+
+
+
+
+
+.btn-submit {
+    margin-top: 2rem;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.btn-submit i {
+    margin-right: auto;
+    font-weight: 900;
+}
+
+@media(max-width:460px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 20vh;
+
+    }
+
+    section {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    section .contact-right {
+        margin-right: 30px;
+    }
+
+    .personal-picture {
+        width: 200px;
+        height: 200px;
+        /* This maintains the aspect ratio while setting the width */
+    }
+
+    article>.experence {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 75px;
+    }
+}
